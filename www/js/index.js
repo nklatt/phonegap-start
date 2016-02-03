@@ -1,12 +1,12 @@
+var colorOne = "blue";
+var colorTwo = "red";
+var nextColor = colorOne;
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
     },
     ndk: function() {
-        var colorOne = "blue";
-        var colorTwo = "red";
-        var nextColor = colorOne;
         $(".board td").on("click", function() {
             $(this).css("background-color", nextColor);
             nextColor = nextColor === colorOne ? colorTwo : colorOne;
@@ -29,7 +29,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        this.ndk();
+        app.ndk();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
