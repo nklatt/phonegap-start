@@ -14,7 +14,6 @@ var app = {
         $("#reset").on("click", function() {
             $(".board td").css("background-color", "white");
         });
-        $(".colA").css("background-color", "purple");
     },
     // Bind Event Listeners
     //
