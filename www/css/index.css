@@ -22,8 +22,8 @@
   border-collapse: separate;
 }
 .board td {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   background-color: white;
 }
 
